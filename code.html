@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; }}::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#bab8b7", "secondary-fixed": "#e5e2e1", "secondary-fixed-dim": "#c9c6c5", "on-error": "#690005", "tertiary-fixed-dim": "#c8c6c5", "error-container": "#93000a", "on-primary": "#690005", "primary": "#ffb4ab", "surface-dim": "#121414", "inverse-surface": "#e2e2e2", "on-secondary-fixed": "#1c1b1b", "inverse-primary": "#bf0715", "secondary-container": "#4a4949", "surface-container": "#1e2020", "on-secondary": "#313030", "on-primary-fixed": "#410002", "on-primary-container": "#fff6f5", "on-tertiary-fixed": "#1b1b1c", "on-tertiary-container": "#fbf8f7", "error": "#ffb4ab", "surface-container-lowest": "#0c0f0f", "surface-bright": "#38393a", "surface-tint": "#ffb4ab", "on-surface": "#e2e2e2", "outline": "#ac8884", "on-tertiary": "#303030", "surface-variant": "#333535", "tertiary-container": "#737272", "on-secondary-fixed-variant": "#474646", "primary-fixed": "#ffdad6", "secondary": "#c9c6c5", "surface": "#121414", "primary-fixed-dim": "#ffb4ab", "surface-container-high": "#282a2b", "on-surface-variant": "#e6bdb8", "on-primary-fixed-variant": "#93000b", "outline-variant": "#5c403c", "surface-container-low": "#1a1c1c", "on-tertiary-fixed-variant": "#474746", "inverse-on-surface": "#2f3131", "background": "#121414", "on-background": "#e2e2e2", "on-error-container": "#ffdad6", "primary-container": "#dc2626", "surface-container-highest": "#333535", "tertiary": "#c8c6c5", "tertiary-fixed": "#e5e2e1" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-xl": "3rem", "margin": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "label-lg": ["Inter"], "body-sm": ["Inter"], "headline-xxl": ["Playfair Display"], "body-lg": ["Inter"], "headline-xl": ["Playfair Display"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-xxl-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "label-sm": ["Inter"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }], "headline-xxl": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "1.6", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }], "headline-xxl-mobile": ["36px", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "1.25", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "1.2", "letterSpacing": "0", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "1.3", "letterSpacing": "0.1em", "fontWeight": "700" }] } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body text-on-surface antialiased">
+<div class="fixed top-0 left-0 right-0 z-50 bg-primary-container text-on-primary-container py-1.5 px-6 flex items-center overflow-hidden">
+<div class="flex items-center gap-2 mr-4 shrink-0">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="font-label-sm uppercase tracking-wider">Breaking News</span>
+</div>
+<div class="whitespace-nowrap overflow-hidden text-body-sm font-medium animate-marquee">
+      EXCLUSIVE: A-list stars spotted at secret rooftop gala in downtown Los Angeles • Surprise collaboration announced for upcoming summer blockbuster • Red carpet fashion highlights from last night's premier
+    </div>
+</div>
+<header class="fixed top-8 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="max-w-7xl mx-auto px-gutter h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="CelebBuzz Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf5ZSG5zcL6of5P_cP7rTyAIFy5OPexqo_w1uS3aDWEP55GYdyBTcxP254IqrZzLYfFbI0YEYszofW96N6fPYlhFuewABGzE5xcB_iwJqerTkR63ebKiI1efymvKD6cFVUlbbilpn6dYnAld-QCY27BaW-lyEN2g-2SIJSabKWo2Ntm_vOj7DgbfpHfxRbtLojsew2qAcs503qAy7K3aebgZbOR1pyqenLSJtoU6UoLjdKI-HYtV9TWw"/>
+<span class="font-headline-md font-bold tracking-tight text-on-surface">CELEBBUZZ</span>
+</div>
+<nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold">
+<a aria-current="page" class="transition-colors text-primary font-bold" data-path="home" href="#">Home</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebrity-news" href="#">Celebrity News</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="hollywood" href="#">Hollywood</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="actors" href="#">Actors</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="singers" href="#">Singers</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="relationships" href="#">Relationships</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies-tv" href="#">Movies & TV</a>
+<a class="text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="net-worth" href="#">Net Worth</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative flex items-center">
+<input class="bg-surface-container-high text-on-surface text-body-sm px-4 py-2 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary w-48 transition-all" placeholder="Search celebs..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[18px]">search</span>
+</div>
+<button class="p-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-32 min-h-screen bg-surface">
+<div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="w-full px-gutter max-w-7xl mx-auto pt-6 pb-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Main Featured Story (8 cols) -->
+<div class="lg:col-span-8 group relative overflow-hidden bg-surface-container rounded-xl flex flex-col justify-end min-h-[520px] p-8">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic high-contrast editorial photograph of an A-list Hollywood actress in a stunning crimson red velvet gown, posing dramatically under moody dramatic lighting on a luxury rooftop in downtown Los Angeles at dusk. Dark obsidian shadows, rich red color grading, ultra-detailed textures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgBSorcbQrkIh5GzSoZtx_6olFmSUroW2tNEx5qSS_YJRFed-ay-gqxY6GSRu0xndiJQbZlkZek5YslLzG3_j-2RPcWFfaSdEgYOPxuZAPkiH1WOqVfTpmDYS2BSPPKe2avZjjytRgJAgO8mSa_TzEY2m5tn9VA0XLMIhlSzWKSut0Xy4tNsRSqbKPKOVjjW4O16dJ2dRl-KYyIbOh4G2nhKMRCH93fTwYYDojdtFZZb5wAJO2-nyTug')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<span class="bg-primary-container text-on-primary-container text-label-sm px-3 py-1 uppercase rounded">Exclusive Cover</span>
+<span class="text-on-surface-variant text-body-sm font-medium">10 mins ago • By Victoria Vance</span>
+</div>
+<h1 class="font-headline-xxl text-on-surface hover:text-primary transition-colors cursor-pointer">
+            Inside Hollywood's Secret Rooftop Gala: Uncensored Moments from the Industry's Elite
+          </h1>
+<p class="text-body-lg text-on-surface-variant line-clamp-2 max-w-2xl">
+            Exclusive eyewitness reports and intimate portraits from the most exclusive private gathering of the award season, where unexpected alliances were forged.
+          </p>
+</div>
+</div>
+<!-- 3 Side Stories (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Side Story 1 -->
+<div class="group bg-surface-container rounded-xl p-4 flex gap-4 items-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-28 h-24 shrink-0 rounded-lg bg-cover bg-center" data-alt="Close up portrait of a famous pop superstar wearing avant-garde sunglasses and diamond accessories, paparazzi flashbulb lighting style, dark cinematic backdrop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1BlkmmYhJDevM3KXbjaTa8PMQff1T5yK8wXMGIHdDKGKk97so3I2wuM1Vqos4Is3VxYOwLbi8Zb7CdWaQhwVbnvwNW-ADmjqJduXO9TbmILf7FnTJyUb60PRrF0AcsilS5xbrIBasJ9p64K6iSswg0SVeqx8K0IXOCTo-M7qhokUpLfkN7X0RmthvWeUYtTx4HDEWFueK82ktZy8HI9dME5U_F_03pe4OnVqNkfmu4jElikULMx5bqg')"></div>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="text-primary text-label-sm uppercase">Music • 2h ago</span>
+<h3 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Surprise Album Drop Shocks Charts</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">How the midnight release broke streaming records in under 3 hours.</p>
+</div>
+</div>
+<!-- Side Story 2 -->
+<div class="group bg-surface-container rounded-xl p-4 flex gap-4 items-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-28 h-24 shrink-0 rounded-lg bg-cover bg-center" data-alt="High-fashion red carpet portrait of an acclaimed actor in a bespoke tailored tuxedo, flashing a charismatic smile at Cannes Film Festival." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKX38QZnkZUqp9dDwDKReNr7Q6ttb1eUAsBKc4Egk6geSwAAIW2ay9EUhAModaFPHrxWwQ3iSr_iyFR1J1aRMX27VigTQglM8sKUdjTDn1VnPnZl0GDjdUbJXp7LK7vEnAFNxmrI6iHFniwlUmu7kaKlVxnSXJouxbZ91LmGblkAEXeJh9LfzwA4FUxJp5L4iQPM3CDOGqUPLNiuPJi6wOWmtBvqvAlc2w-MErT7ABwoaFHnVMyWV2DQ')"></div>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="text-primary text-label-sm uppercase">Red Carpet • 4h ago</span>
+<h3 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Best Dressed at the Annual Gala</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">The standout architectural fashion pieces that defined the evening.</p>
+</div>
+</div>
+<!-- Side Story 3 -->
+<div class="group bg-surface-container rounded-xl p-4 flex gap-4 items-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-28 h-24 shrink-0 rounded-lg bg-cover bg-center" data-alt="Romantic paparazzi shot of a Hollywood power couple walking hand in hand through Tribeca in New York City, moody autumn aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBI_LXBVOhxN0-pPNlF0x9xDmV7_z9oiUj9nEUjYRO94cTOAkjnpywtYDQs1jJjn6saiRoVUnaocAf45dHk_mtsyYpm8vBpJq_S3XNA35SWk7rodwdt5J6lh3Ex4GSDGJBvRB9btj13Daqzoht4UZl9sOWGAZ55aO9yCtSo72xvIXNVO1wJOkc7kitXfsPuta-c_70a2aI90RQx1vievK5ky8DNCVlgj0MzEQxaI-tnDIYUoi59zI3ZuA')"></div>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="text-primary text-label-sm uppercase">Relationships • 6h ago</span>
+<h3 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Power Couple Spotted in NYC</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Spotted dining at an ultra-exclusive members-only bistro downtown.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trending Stories Grid -->
+<section class="w-full px-gutter max-w-7xl mx-auto py-12">
+<div class="flex items-center justify-between mb-8">
+<div>
+<span class="text-primary text-label-md uppercase tracking-wider block mb-1">What's Hot</span>
+<h2 class="font-headline-lg text-on-surface">Trending Stories</h2>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Trend Card 1 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col cursor-pointer">
+<div class="h-64 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Dramatic cinematic portrait of an award-winning actor on a movie set, smoky atmosphere, intense amber and red stage lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRhZeFTdfIo-cXgBRxG6tUOPlcf0irdtWv-VoiLiK16P-WgSCxEfGCD0naNy2_If2i3F3bETmkD-9AsnYkwFYQyZkT3TymkUz1s84KAQzhWe89hgiqhVTvCubPXM_BYXwWIFkShegYWR0TSy7SiJHdOVWcjFJEF4l3aX1c7ZnnwYdVngMn0Y8ng5qJKs5W3oEcDfcwwlm26hCKtemxn0A7B-hUPSK4kgN8hn7IOSW3DdUK_kl80Ybx4A')"></div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-4">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="bg-surface-variant text-on-surface-variant text-label-sm px-2.5 py-1 rounded">Movies</span>
+<span class="text-body-sm text-on-surface-variant">May 24, 2024</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">The Untold Story Behind Hollywood's Most Expensive Blockbuster</h3>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-variant/20 text-body-sm text-on-surface-variant">
+<span>4 min read</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">trending_up</span> #1 Trending</span>
+</div>
+</div>
+</div>
+<!-- Trend Card 2 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col cursor-pointer">
+<div class="h-64 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Fashion portrait of a supermodel wearing haute couture metallic gown on a runway with neon red spotlight beams and dark background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBI6mDUATml0vX2q1mJLVXQIeWY7W0vFHHQ0erRu7PXYpawN6MYitylaY2WlbJ6LpKXeLjFouaaSpyC3nDWCA7f83gdaOpXYaLY6lq1pobgXJhvUlF4s2rwdIXx0gFT6BDNlX_kZpTK1Dn1jmGA5rC5aLmgLsIlHWm2FrpXZZaorZoxUZeHi-SOsAeXk8BmC0cVX-JhZ90Ti-tfSNwbZCCgVSRQAJ27sjuJ61deUyq3rgAgEau_zWVuZA')"></div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-4">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="bg-surface-variant text-on-surface-variant text-label-sm px-2.5 py-1 rounded">Fashion</span>
+<span class="text-body-sm text-on-surface-variant">May 23, 2024</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Met Gala Afterparty Fashion: The Looks Everyone is Talking About</h3>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-variant/20 text-body-sm text-on-surface-variant">
+<span>6 min read</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">trending_up</span> #2 Trending</span>
+</div>
+</div>
+</div>
+<!-- Trend Card 3 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden flex flex-col cursor-pointer">
+<div class="h-64 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Intimate portrait of an iconic Hollywood director in a luxury penthouse overlooking the Los Angeles skyline at night." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRhWrGkefdLyU2kWRjh7FXVpmfzYz9-JgwjZOLm0a6U2NT8c-zcraFsUOp_xrd3gxRy_xCp7Zt8GyBvSCmBXwNKUVsNf9N5PQ01zbijdx_1AaBZ0XdMkXs911h_WKjrryC7jrxEk-VC8C9sJS0BfNIRAtFkiFZTdIP8nm_XqIXsGoEUuMowmS_h89UZIrZe8H7rDadfCLhnhLpDWf3gmcKwrJljZztQxRDqFsialkpVQl_BzUX8vUQ5g')"></div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-4">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="bg-surface-variant text-on-surface-variant text-label-sm px-2.5 py-1 rounded">Directors</span>
+<span class="text-body-sm text-on-surface-variant">May 22, 2024</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Auteur Director Announces Retirement After Decades of Cinematic Masterpieces</h3>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-variant/20 text-body-sm text-on-surface-variant">
+<span>5 min read</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[16px]">trending_up</span> #3 Trending</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content & Sidebar Layout -->
+<section class="w-full px-gutter max-w-7xl mx-auto py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Latest News with Category Tabs & Sidebar (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-primary text-label-md uppercase tracking-wider block mb-1">Live Feed</span>
+<h2 class="font-headline-lg text-on-surface">Latest Celebrity News</h2>
+</div>
+<!-- Category Tabs -->
+<div class="flex items-center gap-2 bg-surface-container p-1.5 rounded-xl overflow-x-auto">
+<button class="news-tab active px-4 py-2 rounded-lg text-label-lg transition-all bg-primary text-on-primary" onclick="filterNews('all')">All</button>
+<button class="news-tab px-4 py-2 rounded-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" onclick="filterNews('hollywood')">Hollywood</button>
+<button class="news-tab px-4 py-2 rounded-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" onclick="filterNews('fashion')">Fashion</button>
+<button class="news-tab px-4 py-2 rounded-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" onclick="filterNews('movies')">Movies</button>
+</div>
+</div>
+<!-- Interactive Article Cards Feed -->
+<div class="flex flex-col gap-6" id="news-feed">
+<!-- Article Item 1 -->
+<article class="news-item group bg-surface-container rounded-xl p-6 flex flex-col sm:flex-row gap-6 cursor-pointer" data-category="hollywood">
+<div class="w-full sm:w-56 h-40 shrink-0 rounded-lg bg-cover bg-center" data-alt="Close up portrait of a famous movie star at a private press junket in Beverly Hills, professional studio flash lighting, dark textured background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQXl_Pese2IYztKf7fD8zcTl3pQxgwVla7FdSlJt9WSw8LO2Af3mWUofEYX5CmGFMTUD4oOE8ZgSlnaGsgsFwCGeQh3Ey9YqnYjPEit7h_pGFy0b9ZH5syQBLXFpSo5dxsmgUxPcZydSwRAP68SXTVBqoZwtua4eqstseyxLz8ui5rRo5wlRVEvgPyp-Y0rMj6WZerR7jdtUACohYwg7DtwTgxopnO0WpkrPjZZF4X_PONeLYH2VN52g')"></div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-label-sm uppercase">Hollywood</span>
+<span class="text-on-surface-variant text-body-sm">• 1 hour ago</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Behind the Scenes of the Season's Most Anticipated Sequel</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Cast members reveal unprecedented physical transformations and intense training regimens required for the sci-fi epic.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t border-surface-variant/20">
+<span class="text-body-sm text-on-surface-variant">By Marcus Sterling</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Article Item 2 -->
+<article class="news-item group bg-surface-container rounded-xl p-6 flex flex-col sm:flex-row gap-6 cursor-pointer" data-category="fashion">
+<div class="w-full sm:w-56 h-40 shrink-0 rounded-lg bg-cover bg-center" data-alt="High fashion editorial shot of a supermodel wearing an avant-garde crimson dress, dramatic studio lighting against a dark obsidian backdrop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAX4xUz3chrw7yee5tJNMqTfmuDt_hCP4J-N5C7IWGw9HxL2vWpdc7wnlp8K5-wHpSivl8PC2mI1xa7mLJc1DYwWa_SzSV-UZjXhGOiQyfYRnXP7KAZFJP9_BXlzWF_0Z9G6g9Wbb7VibNFP9wpi6CuNjzebapccO4CImtlMx-wvJrpb7oapacjFTKEEWS5lVJHtpNUh0GuZHgnOSIeZn7Ek5_sepOj6M5hW253wCDeylX7z-TdNfYdxg')"></div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-label-sm uppercase">Fashion</span>
+<span class="text-on-surface-variant text-body-sm">• 3 hours ago</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">The Return of Minimalist Red Carpet Glamour in Paris</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Top designers pivot away from excessive ornamentation toward sleek, architectural silhouettes that stunned critics.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t border-surface-variant/20">
+<span class="text-body-sm text-on-surface-variant">By Elena Rostova</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Article Item 3 -->
+<article class="news-item group bg-surface-container rounded-xl p-6 flex flex-col sm:flex-row gap-6 cursor-pointer" data-category="movies">
+<div class="w-full sm:w-56 h-40 shrink-0 rounded-lg bg-cover bg-center" data-alt="Cinematic still from an upcoming thriller film showing an actor in suspenseful shadows under neon red emergency lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApEYQOvRDzDGgWaB2VzgwuHxPyOYcRqReTGNSpx8MW2thWx6Oh5ZvUHbuyIkPkcu5j4KHiR5Cf_cBSeuEsjec55RB_gT-c6FkoWQxt2dgxjXzRaqubGjrig-ym8lTSAL-JR1q5Chgfg65sNwUWNscTyD1XndDlmJVSwsPm4qDciO7yXzK6eulyXIfBaUzJIA0uP0V24W-qWQtdLKtYGh9GVAaTpdE_SjrxxakacLgPrxtwpTjsysP_DA')"></div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-label-sm uppercase">Movies</span>
+<span class="text-on-surface-variant text-body-sm">• 5 hours ago</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Director Teases Mind-Bending Twist in Upcoming Summer Thriller</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">An exclusive look into the practical effects and immersive sound design powering the year's most secretive production.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t border-surface-variant/20">
+<span class="text-body-sm text-on-surface-variant">By Julian Cross</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Article Item 4 -->
+<article class="news-item group bg-surface-container rounded-xl p-6 flex flex-col sm:flex-row gap-6 cursor-pointer" data-category="hollywood">
+<div class="w-full sm:w-56 h-40 shrink-0 rounded-lg bg-cover bg-center" data-alt="Paparazzi photograph of a renowned actress arriving at a private film premiere in downtown Los Angeles at night." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyZOZL-CHQbg6ESFwIRlsagWYePjUfvX6GgHhRUjVc-nC2cRKcttZu0aCXygqKgqFcYgE2Tt8qpWwBFz4TWz_SG1LC-11uLtpd0bVc5IPkXaZbPgQrh3X3hfHyA1Nvgm-qWVfGSN8FCHb8jFZiejnl76PW3NWaph6N5lSDGilqRSDjVGFDEv-rIXqXp0q9GHJ-OK98YRfebIJegzRDuplJMlM9urrCNwDI5EO32EwdqCo7C7aT2ZbvqA')"></div>
+<div class="flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="text-primary text-label-sm uppercase">Hollywood</span>
+<span class="text-on-surface-variant text-body-sm">• 7 hours ago</span>
+</div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors mb-2">Inside the Private Charity Gala Hosted by Hollywood Royalty</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">A star-studded evening raises record-breaking funds for independent film preservation and youth arts education.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t border-surface-variant/20">
+<span class="text-body-sm text-on-surface-variant">By Victoria Vance</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Load More Button -->
+<button class="w-full py-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg rounded-xl transition-colors flex items-center justify-center gap-2">
+<span>Load More Stories</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+<!-- Right Column: Sidebar (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<!-- Newsletter Box -->
+<div class="bg-surface-container rounded-xl p-6 relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+<span class="material-symbols-outlined text-primary text-[36px] mb-3">mark_email_read</span>
+<h3 class="font-headline-md text-on-surface mb-2">Get Insider Gossip</h3>
+<p class="text-body-sm text-on-surface-variant mb-6">Join 250,000+ readers who receive our daily confidential Hollywood dispatch.</p>
+<form class="flex flex-col gap-3" id="newsletter-form" onsubmit="handleNewsletter(event)">
+<div class="relative">
+<input class="w-full bg-surface-container-high text-on-surface text-body-sm px-4 py-3 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary" id="newsletter-input" placeholder="Enter your email address" required="" type="email"/>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg py-3 rounded-xl hover:opacity-90 transition-opacity" type="submit">Subscribe Now</button>
+<p class="text-body-sm text-primary text-center hidden" id="newsletter-msg">Thanks for subscribing! Check your inbox.</p>
+</form>
+</div>
+<!-- Trending Ranking Sidebar -->
+<div class="bg-surface-container rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-on-surface">Most Read</h3>
+<span class="text-primary text-label-sm uppercase">Today</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4 cursor-pointer group">
+<span class="font-headline-lg text-primary/40 font-bold">01</span>
+<div>
+<span class="text-on-surface-variant text-label-sm uppercase">Box Office</span>
+<h4 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">The Surprising Box Office Triumph No One Saw Coming</h4>
+</div>
+</div>
+<div class="flex items-start gap-4 cursor-pointer group">
+<span class="font-headline-lg text-primary/40 font-bold">02</span>
+<div>
+<span class="text-on-surface-variant text-label-sm uppercase">Relationships</span>
+<h4 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Inside Hollywood's Most Talked-About Engagement</h4>
+</div>
+</div>
+<div class="flex items-start gap-4 cursor-pointer group">
+<span class="font-headline-lg text-primary/40 font-bold">03</span>
+<div>
+<span class="text-on-surface-variant text-label-sm uppercase">Fashion</span>
+<h4 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Red Carpet Secrets Stylists Never Tell You</h4>
+</div>
+</div>
+<div class="flex items-start gap-4 cursor-pointer group">
+<span class="font-headline-lg text-primary/40 font-bold">04</span>
+<div>
+<span class="text-on-surface-variant text-label-sm uppercase">Exclusive</span>
+<h4 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Why This A-Lister Walked Away From Franchise Stardom</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Ad Placeholder -->
+<div class="bg-surface-container rounded-xl p-8 flex flex-col items-center justify-center text-center border border-surface-variant/10 relative overflow-hidden min-h-[300px]">
+<div class="absolute inset-0 bg-cover bg-center opacity-30" data-alt="Luxury perfume bottle advertisement mockup against a dark moody velvet background with dramatic red lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzq46Q4CJuOoFqloJxi8DsFOCryLXfEHUhXrWAdMSL0ePJBO6VT7F5gan0p7khuUEesh15cYue7WhdmRuB3ojijpk9W4AzSNPWTY2RLzgtESKV1wZupVAilvFPd3n0VEvcjX8KIRd7dW1sAobSU1EaAQe6oVAW11wiDq-5fsz8uM-dLZcdQvlhHq0e8BrwsQ3Pg_MKmSU843FWJwVn_klQSuhPYULqqwEiVGQ82lNs6GETwSOFgJPltA')"></div>
+<div class="relative z-10 flex flex-col items-center gap-3">
+<span class="text-label-sm text-on-surface-variant uppercase tracking-widest">Advertisement</span>
+<h4 class="font-headline-md text-on-surface">L'Étoile Noir Fragrance</h4>
+<p class="text-body-sm text-on-surface-variant max-w-xs">Experience the scent of pure cinematic allure. Available now at luxury boutiques worldwide.</p>
+<button class="mt-2 px-6 py-2.5 bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary transition-colors rounded-xl text-label-lg">Explore Collection</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Celebrities Section -->
+<section class="w-full bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-primary text-label-md uppercase tracking-wider block mb-1">Star Power</span>
+<h2 class="font-headline-xl text-on-surface">Popular Celebrities & Net Worth</h2>
+</div>
+<p class="text-body-md text-on-surface-variant max-w-md">Track the financial portfolios, upcoming film contracts, and trending public appearances of Hollywood's highest earners.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Celeb Card 1 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden cursor-pointer flex flex-col">
+<div class="h-80 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Glamorous portrait of award-winning actor Christian Sterling in a luxury hotel suite, dark mood lighting, high contrast." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATrXrZQgZaYy8jntwLP1BJqmiaqD1M8dgXnZUvIpG0wd5AfAt9Etq8uoyZDFsDQh9TlYZYq_1Y6wrDUYKdzXsvpJ5fZw_izXeAyo8WyCdAb1ABbCc0-ZVI71qUG48UcvccEAi-5amKriq2EXUxUko86_TQW9Z7BENgKZa1FW6J58AmRee0LnOnTojo7a8D0Ku5btzS9sMIpL1gcFJxYBMbIi1ICumyDIyO2kkbny5scnRV56QJs9MKUg')"></div>
+<div class="p-6 flex flex-col justify-between flex-grow gap-4">
+<div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Christian Sterling</h3>
+<p class="text-body-sm text-on-surface-variant">Award-Winning Actor</p>
+</div>
+<div class="pt-4 border-t border-surface-variant/20 flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Estimated Net Worth</span>
+<span class="font-label-lg text-primary">$120M</span>
+</div>
+</div>
+</div>
+<!-- Celeb Card 2 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden cursor-pointer flex flex-col">
+<div class="h-80 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Stunning portrait of pop icon Seraphina Vance in a glittering stage outfit, moody red spotlight, cinematic aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsWe11XJO1IqSSCeVmfmnhh8KtWE8N_XaUsPxfPgBCT_FOPhVQFlrIWoSBdC8LvFy3pn30ONyGToVh_5A7vJIsPVHEz5xsmPWGY4aqmnTovgwjZmxeOLHb3NI105KIhE9SMr7F47e_lmzd2DaxePhpGRO0UkYvDmOHmPT-244-bBrV8iFx_usyVoyDUYAA0enVrj651EXiPwx9GXuRZMD91uBwPWILPzFP-HVUu7HmRRmpm3KEEIdOog')"></div>
+<div class="p-6 flex flex-col justify-between flex-grow gap-4">
+<div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Seraphina Vance</h3>
+<p class="text-body-sm text-on-surface-variant">Global Pop Superstar</p>
+</div>
+<div class="pt-4 border-t border-surface-variant/20 flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Estimated Net Worth</span>
+<span class="font-label-lg text-primary">$240M</span>
+</div>
+</div>
+</div>
+<!-- Celeb Card 3 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden cursor-pointer flex flex-col">
+<div class="h-80 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Sophisticated portrait of acclaimed director Julian Kross in a minimalist modern office, dark tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBz5smARZp1TU4oJNuqw4NqICQJaiO-4noVGoJGyGDkFLePnmEz9aOGmlae0iNjikNteGuObOPCQF-5gnxXLUF_-9qNi48eAK9QTGQIeIm8ghHVbZskOr7-yvKg9e54qE9tvcVTBJ3USwXlHiT--mzi-a5xG2TVIUxV5JzGPKOT2_vKNBtrNPHHZpOj2w3NnEFvu17shk6FT004ex4TE2YXVVmzpa_uoIujfruhkWECwxtiep2IJ9b-KA')"></div>
+<div class="p-6 flex flex-col justify-between flex-grow gap-4">
+<div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Julian Kross</h3>
+<p class="text-body-sm text-on-surface-variant">Blockbuster Director</p>
+</div>
+<div class="pt-4 border-t border-surface-variant/20 flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Estimated Net Worth</span>
+<span class="font-label-lg text-primary">$180M</span>
+</div>
+</div>
+</div>
+<!-- Celeb Card 4 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden cursor-pointer flex flex-col">
+<div class="h-80 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="High-fashion portrait of supermodel and entrepreneur Maya Lin in a bespoke velvet blazer, urban dusk background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbdM4DBISDr-ut3FIThxQ7Tzb-_hGVT9dT3agI0iGHH4q_JgPKN_NThArpYuusEZwZpJ0k0dKZNvGwssoiAYcW2nrDY2MUYb6RjldXWN5cwQKCEkcbdZ1hJE_RMi9zyiRXPumfCigOLR2Ldrz5v1UKAobZz5j7H2zYPpGi-armDTYNu2KiNcZHUhyMADTfbblvlae7yX8aXqY1PHPkHICefnF8fLZ6XX6Lkcl_yGPsILGfNBG6YxJiMA')"></div>
+<div class="p-6 flex flex-col justify-between flex-grow gap-4">
+<div>
+<h3 class="font-headline-md text-on-surface group-hover:text-primary transition-colors">Maya Lin</h3>
+<p class="text-body-sm text-on-surface-variant">Supermodel & Entrepreneur</p>
+</div>
+<div class="pt-4 border-t border-surface-variant/20 flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Estimated Net Worth</span>
+<span class="font-label-lg text-primary">$95M</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    // Category Filtering for News Feed
+    function filterNews(category) {
+      const tabs = document.querySelectorAll('.news-tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary', 'text-on-primary');
+        tab.classList.add('text-on-surface-variant');
+      });
+      event.currentTarget.classList.add('bg-primary', 'text-on-primary');
+      event.currentTarget.classList.remove('text-on-surface-variant');
+
+      const items = document.querySelectorAll('.news-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Newsletter Validation & Success Feedback
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const input = document.getElementById('newsletter-input');
+      const msg = document.getElementById('newsletter-msg');
+      if (input.value && input.value.includes('@')) {
+        input.value = '';
+        msg.classList.remove('hidden');
+        setTimeout(() => {
+          msg.classList.add('hidden');
+        }, 5000);
+      }
+    }
+  </script>
+</div>
+</main>
+<footer class="w-full bg-surface-container-low border-t border-surface-variant/20 py-16">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<img alt="CelebBuzz Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf5ZSG5zcL6of5P_cP7rTyAIFy5OPexqo_w1uS3aDWEP55GYdyBTcxP254IqrZzLYfFbI0YEYszofW96N6fPYlhFuewABGzE5xcB_iwJqerTkR63ebKiI1efymvKD6cFVUlbbilpn6dYnAld-QCY27BaW-lyEN2g-2SIJSabKWo2Ntm_vOj7DgbfpHfxRbtLojsew2qAcs503qAy7K3aebgZbOR1pyqenLSJtoU6UoLjdKI-HYtV9TWw"/>
+<span class="font-headline-sm font-bold tracking-tight text-on-surface">CELEBBUZZ</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-6">Your premier destination for exclusive celebrity gossip, red carpet fashion, Hollywood insider secrets, and breaking entertainment news.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface uppercase tracking-wider mb-4">Categories</h4>
+<ul class="space-y-2">
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebrity-news" href="#">Celebrity News</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="hollywood" href="#">Hollywood</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="actors" href="#">Actors & Actresses</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="singers" href="#">Music & Singers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface uppercase tracking-wider mb-4">Features</h4>
+<ul class="space-y-2">
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="relationships" href="#">Relationships & Dating</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies-tv" href="#">Movies & TV Shows</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="net-worth" href="#">Celebrity Net Worth</a></li>
+<li><a class="text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Red Carpet Galleries</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-on-surface uppercase tracking-wider mb-4">Newsletter</h4>
+<p class="text-body-sm text-on-surface-variant mb-4">Get the latest Hollywood gossip delivered straight to your inbox daily.</p>
+<div class="flex flex-col gap-2">
+<input class="bg-surface-container-high text-on-surface text-body-sm px-4 py-2.5 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary w-full" placeholder="Enter your email" type="email"/>
+<button class="bg-primary-container text-on-primary-container font-label-lg py-2.5 px-4 rounded-xl hover:opacity-90 transition-opacity">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-gutter pt-8 border-t border-surface-variant/10 text-center text-body-sm text-on-surface-variant">
+      © 2024 CelebBuzz Magazine. All rights reserved. Powered by high-end editorial standards.
+    </div>
+</footer>
+</body></html>
